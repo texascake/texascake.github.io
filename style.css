@@ -31,6 +31,20 @@ main {
     padding: 0 20px;
 }
 
+main {
+    max-width: 1000px; /* Saya perlebar sedikit agar muat untuk dua kartu */
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* === KODE BARU: MENGATUR TATA LETAK DUA KOLOM === */
+.grid-container {
+    display: grid;
+    /* Baris di bawah ini yang membagi layar menjadi kolom secara responsif */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px; /* Jarak antara kartu kiri dan kanan */
+}
+
 /* === DESAIN KARTU RILIS (RELEASE CARD) === */
 .release-card {
     background-color: #1e293b; /* Warna latar kartu sedikit lebih terang dari background utama */
